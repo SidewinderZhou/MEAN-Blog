@@ -1,0 +1,17 @@
+{
+  "name": "html5-boilerplate",
+  "version": "1.0.0",
+  "devDependencies": {
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.0.1",
+    "mongoose": "^4.5.2",
+    "morgan": "^1.7.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
