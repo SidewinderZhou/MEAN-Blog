@@ -24,9 +24,13 @@ server.use(morgan('dev'));
 //static directory where resources can be linked to html page
 server.use(express.static(__dirname + '/app'));
 
-//handle signup
-var api = require('./server/Controllers/api.js')(express);
-server.use('/api', api);
+//handle admin channel
+var adminApi = require('./server/controllers/admin.js')(express);
+server.use('/api/admin', adminApi);
+
+//handle admin channel
+var userApi = require('./server/controllers/user.js')(express);
+server.use('/api/user', userApi);
 
 //routes to home page
 server.get('*', function(req, res) {

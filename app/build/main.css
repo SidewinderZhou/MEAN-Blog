@@ -3,6 +3,119 @@ html,body {
 	margin: 0;
 }
 
-p {
-	color: red;
+ul {
+	list-style: none;
+}
+
+.about {
+	min-height: 800px;
+}
+.home {
+	min-height: 800px;
+}
+
+.loading {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	opacity: 0.5;
+}
+
+.drop-list {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+}
+.drop-list ul{
+	list-style: none;
+	top: 35px;
+	right: 0px;
+}
+.drop-list ul li a{
+	background-color: gray;
+}
+
+.drop-lang {
+	position: absolute;
+	right: 65px;
+	top: 25px;
+}
+.drop-lang ul{
+	list-style: none;
+	top: 35px;
+	right: 0px;
+}
+.drop-lang ul li a{
+	background-color: gray;
+}
+
+.small.ng-leave  {
+	transition: 0.5s linear all;
+	opacity: 1;
+}
+
+.small.ng-leave.ng-leave-active {
+	opacity: 0;
+}
+
+.articleDialog {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: fixed;
+	background-color: white;
+	z-index: 999;
+	display: block;
+	padding-top: 50px;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	opacity: 1;
+}
+
+.articleDialog.ng-enter {
+	opacity: 0;
+	height: 0%;
+	width: 0%;
+	transition: 0.2s linear all;
+}
+
+.articleDialog.ng-enter.ng-enter-active {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}
+
+.to-top {
+	position: fixed;
+	right: 5px;
+	bottom: 50px;
+	z-index: 998;
+}
+
+@media (max-width: 600px) {
+  .laptop {
+    display: none;
+  }
+
+  .mobile {
+    display: initial;
+  }
+
+  .searchPadding {
+  	width:33.33%;
+  }
+}
+
+@media (min-width: 601px) {
+  .mobile {
+    display: none;
+  }
+
+  .searchPadding {
+  	width:33.33%;
+  }
 }

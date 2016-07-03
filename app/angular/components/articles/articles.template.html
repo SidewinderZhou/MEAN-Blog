@@ -1,0 +1,19 @@
+<section>
+	<!-- <h5 ng-init="bool=true"  ng-click="bool=!bool">this is article list</h5> -->
+	<ul class="w3-ul w3-center">
+		<li class="w3-hover-green" ng-repeat="article in $ctrl.list | filter : $ctrl.filterText:strict | filter : $ctrl.language | orderBy : '-created'"  ng-click="$ctrl.showAndLoad(article)" >
+			<h2 ng-click="$ctrl.myFunc(article.title)">{{article.title}}</h4>
+			<p>{{article.tldr}}</p>
+			<p>{{article.created}}</p>
+			<p>{{article.tags}}</p>
+		</li>
+	</ul>
+	<i class="w3-spin w3-xxxlarge fa fa-refresh loading" ng-if="$ctrl.loading" aria-hidden="true"></i>
+</section>
+
+<section ng-if="$ctrl.showDetail" class="articleDialog">
+	<button  ng-click="$ctrl.showDetail=!$ctrl.showDetail" style="position:absolute;right:20px;top:20px">X</button>
+	<article-detail>
+	
+	</article-detail>
+</section>

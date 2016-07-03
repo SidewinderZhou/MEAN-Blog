@@ -1,0 +1,13 @@
+<article>
+	<!-- <h1>this is article</h1> -->
+	<ul>
+		<li>
+			<h2>{{ $ctrl.data.title }}</h4>
+			<p>{{ $ctrl.data.created }}</p>
+			<p>{{ $ctrl.data.tldr }}</p>
+			<p style="text-align:left" ng-bind-html="$ctrl.data.content" ></p>
+			<p>{{ $ctrl.data.tags }}</p>
+		</li>
+	</ul>
+	<i class="w3-spin w3-xxxlarge fa fa-refresh loading" ng-if="$ctrl.loading" aria-hidden="true"></i>
+</article>
