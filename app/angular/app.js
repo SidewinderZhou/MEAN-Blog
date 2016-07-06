@@ -1,8 +1,12 @@
-require('angular');
-require('angular-route');
-require('angular-animate');
+require('angular/angular.min');
+require('angular-route/angular-route.min');
+require('angular-animate/angular-animate.min');
 require('@angular/router/angular1/angular_1_router');
 require('angular-sanitize');
+
+require('../lib/angularIEpolyfill');
+require('../lib/es6shim');
+require('../lib/syspolyfill');
 
 require('./services/home-service');
 require('./services/article-service');

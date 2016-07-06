@@ -1,4 +1,4 @@
-var moment = require('moment');
+var moment = require('moment/min/moment.min');
 
 //to share data between components under home component
 angular
@@ -16,7 +16,7 @@ angular
 		factory.init = function(list) {
 			factory.list = list;
 			for (var i = 0; i < factory.list.length; i++) {
-				factory.list[i].created = moment(factory.list[i].created).format('YYYY-MM-DD, hh:mm:ss');
+				factory.list[i].created = moment(factory.list[i].created).format('YYYY-MM-DD, HH:mm:ss');
 			}
 		}
 

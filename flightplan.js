@@ -1,10 +1,11 @@
 var plan = require('flightplan');
 
-var appName = 'node-app';
+var appName = 'MEAN-Blog';
 var username = 'root';
 var startFile = 'server.js';
 
-var tmpDir = appName+'-' + new Date().getTime();
+// var tmpDir = appName+'-' + new Date().getTime();
+var tmpDir = appName;
 
 // configuration
 plan.target('staging', [
