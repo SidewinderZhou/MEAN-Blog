@@ -1,3 +1,4 @@
+server/server.config.js
 node_modules/
 bower_components/
 .git
