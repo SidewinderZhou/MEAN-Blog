@@ -7,6 +7,7 @@ require('angular-sanitize');
 require('../lib/angularIEpolyfill');
 require('../lib/es6shim');
 require('../lib/syspolyfill');
+require('../lib/prism');
 
 require('./services/home-service');
 require('./services/article-service');
