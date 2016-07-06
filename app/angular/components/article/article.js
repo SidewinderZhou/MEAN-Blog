@@ -22,11 +22,16 @@ function ArticleController ($http, ArticleFactory) {
 		}
 	})
 	.then(function(response){
+		
+		/*
+		 * mark this block of code for later diving in
+		 */
 		self.loading = false;
 		self.data.content = response.data.content;
+		console.log('article content received!');
+		setTimeout(function() {
+			//only call this asychronously will work
+			Prism.highlightAll();
+		},0);
 	})
-	// setTimeout(function(){}, 5000)
-	
-	
-
 }

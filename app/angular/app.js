@@ -19,12 +19,21 @@ require('./components/tags/tags');
 require('./components/search/search');
 require('./components/lang/lang');
 
-
-
 angular
 
 	.module('myApp', ['ngAnimate', 'ngComponentRouter', 'home', 'about'])
 
+	.directive('ngPrism', [function() {
+	    return {
+	        restrict: 'A',
+	        link: function($scope, element, attrs) {
+	            element.ready(function() {
+	                Prism.highlightElement(element[0]);
+	            });
+	        }
+	    }
+	}])
+	
 	.config(function($locationProvider) {
 		$locationProvider.html5Mode(true);
 	})
