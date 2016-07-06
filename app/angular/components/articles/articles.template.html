@@ -1,7 +1,7 @@
 <section>
 	<!-- <h5 ng-init="bool=true"  ng-click="bool=!bool">this is article list</h5> -->
-	<ul class="w3-ul w3-center">
-		<li class="w3-hover-green" ng-repeat="article in $ctrl.list | filter : $ctrl.filterText:strict | filter : $ctrl.language | orderBy : '-created'"  ng-click="$ctrl.showAndLoad(article)" >
+	<ul class="w3-ul w3-theme-l5 w3-center">
+		<li class="w3-hover-white" ng-repeat="article in $ctrl.list | filter : $ctrl.filterText:strict | filter : $ctrl.language | orderBy : '-created'"  ng-click="$ctrl.showAndLoad(article)" >
 			<h2 ng-click="$ctrl.myFunc(article.title)">{{article.title}}</h4>
 			<p>{{article.tldr}}</p>
 			<p>{{article.created}}</p>

@@ -1,4 +1,5 @@
 server/server.config.js
+flightplan.js
 node_modules/
 bower_components/
 .git
